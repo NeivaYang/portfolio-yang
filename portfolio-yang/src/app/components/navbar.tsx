@@ -34,7 +34,7 @@ const Navbar = () => {
                     </Link> */}
                     <div className="flex w-1/3 gap-x-20">
                         <Link 
-                        href={'/'}
+                        href={'../pages/about'}
                         className="flex items-center justify-center text-white hover:text-gray-300 focus:text-gray-500 lg:mb-0 lg:mt-0"
                         >
                             SOBRE MIM

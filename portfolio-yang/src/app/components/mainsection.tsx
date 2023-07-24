@@ -1,15 +1,16 @@
 'use client'
 import Navbar from "./navbar"
 import { MaquinaDeEscrever } from "./MaquinaDeEscrever";
+import MyComponent from '../myComponent'
 
 export default function MainSection(){
     return (
         <section className="h-screen w-screen" >
             <Navbar />
             <div className="container my-24 mx-auto md:px-6">
-                <section className="mb-32 text-center">
+                <section className="text-center">
                     <div className="flex justify-center">
-                        <div className="max-w-[800px]">
+                        <div className="max-w-[800px] h-50">
                             <p className="text-lg text-rose-600">
                                 <MaquinaDeEscrever text="XXXXXX: " esconderCursor />
                                 {/* <MaquinaDeEscrever text="OLÁ, EU SOU " esconderCursor /> */}
@@ -38,7 +39,8 @@ export default function MainSection(){
                         </div> */}
                     </div>
                 </section>
-                </div>
+            </div>
+            <MyComponent />
         </section>
     )
 }
